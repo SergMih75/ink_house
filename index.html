@@ -1,14 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
-</head>
-<body>
-    
-    <script src="./js/main.js" type="text/javascript"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/global.css" />
+		<link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/home.css">
+        <link rel="stylesheet" href="./css/product.css">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="main">
+			<header class="header">
+				<div class="logo">
+					<svg
+						width="35"
+						height="35"
+						viewBox="0 0 35 35"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M17.5 0L19.9652 9.10444L26.9612 2.77806L24.1128 11.77L33.4186 10.2302L26.1609 16.2547L34.8219 19.9905L25.4593 21.1349L30.7256 28.9601L22.2306 24.861L22.4303 34.2911L17.5 26.25L12.5697 34.2911L12.7694 24.861L4.27438 28.9601L9.54072 21.1349L0.178125 19.9905L8.83906 16.2547L1.58144 10.2302L10.8872 11.77L8.03879 2.77806L15.0348 9.10444L17.5 0Z"
+							fill="#598D66"
+						/>
+					</svg>
+					<h2 class="logo-title">Ink. House</h2>
+				</div>
+				<nav class="nav">
+					<ul class="menu">
+						<li><a href="#reproductions">Репродукции</a></li>
+						<li><a href="#">Новинки</a></li>
+						<li><a href="#">О нас</a></li>
+
+                        <svg class="basket"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g clip-path="url(#clip0_3_996)">
+							<path
+								d="M9.25001 21.1667C9.75627 21.1667 10.1667 20.7563 10.1667 20.25C10.1667 19.7438 9.75627 19.3334 9.25001 19.3334C8.74375 19.3334 8.33334 19.7438 8.33334 20.25C8.33334 20.7563 8.74375 21.1667 9.25001 21.1667Z"
+								stroke="#2C2D35"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M19.3333 21.1667C19.8396 21.1667 20.25 20.7563 20.25 20.25C20.25 19.7438 19.8396 19.3334 19.3333 19.3334C18.8271 19.3334 18.4167 19.7438 18.4167 20.25C18.4167 20.7563 18.8271 21.1667 19.3333 21.1667Z"
+								stroke="#2C2D35"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M1.91666 1.91663H5.58332L8.03999 14.1908C8.12381 14.6128 8.35341 14.9919 8.68857 15.2617C9.02374 15.5315 9.44313 15.6749 9.87332 15.6666H18.7833C19.2135 15.6749 19.6329 15.5315 19.9681 15.2617C20.3032 14.9919 20.5328 14.6128 20.6167 14.1908L22.0833 6.49996H6.49999"
+								stroke="#2C2D35"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</g>
+						<defs>
+						</defs>
+					</svg>
+					</ul>
+				</nav>
+			</header>
+
+            <section class="home">
+                <div class="home-pic">
+                    <img  src="./img/pic/main-picture.jpg" alt="Home">
+                </div>
+
+                <div class="home-text">
+                    <h1 class="home-text-title">Реплики картин от <span>Ink. House</span></h1>
+                    <p class="home-text-text">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
+                    <a class="home-text-btn" href="#">Продукция</a>
+                </div>
+            </section>
+
+            <section id="reproductions" class="reproductions">
+                <div class="reproductions-navigation">
+                    <h2 class="reproductions-title">Репродукции</h2>
+                    <div class="collection-block">
+                        <div class="collection-item  collection-active" data-attr="fr">Франция</div>
+                        <div class="collection-item" data-attr="ddr">Германия</div>
+                        <div class="collection-item" data-attr="gb">Англия</div>
+                    </div>
+                </div>
+
+                <div class="reproduction-collection">
+                    <!-- <div class="reproduction-collection-item">
+                        <img class="item-img" src="./img/pic/FRANCE/cupid_s-hunt.jpg" alt="">
+                        <h3 class="item-author">Марсель Руссо</h3>
+                        <h2 class="item-title">Охота Амура</h2>
+                        <p class="item-description">Холст, масло (50х80)</p>
+                        <p class="item-price">14 500 руб</p>
+                        <div class="item-add-btn">В корзину</div>
+                    </div> -->
+                </div>
+            </section>
+		</div>
+        <script src="./js/data.js" type="text/javascript"></script>
+		<script src="./js/main.js" type="text/javascript"></script>
+	</body>
 </html>

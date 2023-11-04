@@ -1,0 +1,134 @@
+.reproductions {
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.reproductions-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reproductions-title {
+    font-size: 40px;
+    line-height: 110%; /* 44px */
+    color: #2C2D35;
+}
+
+.collection-block {
+    max-width: 425px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.collection-item {
+    width: 135px;
+    padding: 10px;
+
+    text-align: center;
+
+    cursor: pointer;
+    background-color: #d4e8d9;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #2C2D35;
+}
+
+.collection-item:hover,
+.collection-item:active,
+.collection-active {
+    background-color: #376b44;
+
+    color: #F4F6F5;
+}
+
+.collection-active {
+    cursor: none;
+}
+
+.reproduction-collection {
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.reproduction-collection-item {
+    width: 350px;
+    padding: 20px 20px 30px 20px;
+
+    background-color: #E1EDE6;
+}
+
+.reproduction-collection-item:hover {
+    box-shadow: -3px 3px 8px #376b44;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.item-author {
+    margin-top: 20px;
+
+    font-size: 18px;
+    color: #86928B;
+}
+
+.item-title {
+    margin-top: 10px;
+
+    font-size: 30px;
+    color: #2C2D35;
+}
+
+.item-description {
+    margin-top: 8px;
+
+    font-size: 18px;
+    color: #2C2D35;
+}
+
+.item-price {
+    margin-top: 30px;
+
+    font-size: 24px;
+    color: #598D66;
+}
+
+.item-add-btn {
+    width: 310px;
+    margin-top: 10px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    border: 1px solid #598D66;
+
+    font-size: 20px;
+    color: #598D66;
+}
+
+.item-add-btn:hover {
+    background-color: #376b44;
+    color: #ffff;
+    text-transform: uppercase;
+    box-shadow: -2px 2px 8px #376b44;
+}
