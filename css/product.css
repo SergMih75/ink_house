@@ -73,13 +73,18 @@
     background-color: #E1EDE6;
 }
 
-.reproduction-collection-item:hover {
+.reproduction-collection-item:hover,
+.item-img:hover {
     box-shadow: -3px 3px 8px #376b44;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+}
+
+.item-img:hover {
+scale: 1.5;
 }
 
 .item-author {

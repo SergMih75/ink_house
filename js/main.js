@@ -3,6 +3,25 @@ collection.forEach(function (elem) {
 	elem.addEventListener('click', activeCollection)
 })
 
+// Первоначальное формирование списка репродукций в зависимости от активной кнопки коллекции при загрузке страницы
+document.addEventListener('DOMContentLoaded', function(){
+    collection.forEach(function (elem) {
+        if (elem.classList.contains('collection-active')){
+            let collectionAttrib = elem.getAttribute('data-attr')
+
+    if (collectionAttrib == 'fr') {
+        creationCard(fr)
+    }
+    if (collectionAttrib == 'ddr') {
+        creationCard(ddr)
+    }
+    if (collectionAttrib == 'gb') {
+        creationCard(gb)
+    }
+        }
+    })
+})
+
 function activeCollection() {
 	collection.forEach(function (elem) {
 		elem.classList.remove('collection-active')
@@ -34,9 +53,16 @@ function creationCard(data){
         <h2 class="item-title">${item[2]}</h2>
         <p class="item-description">${item[3]}</p>
         <p class="item-price">${item[4]} руб</p>
-        <div class="item-add-btn">В корзину</div>
+        <div class="item-add-btn" data-attr="${item[5]}">В корзину</div>
     `
 
     document.querySelector('.reproduction-collection').append(cardItem)
     })
+
+        let addBtn = document.querySelectorAll('.item-add-btn')
+        addBtn.forEach(function(elem){
+            let productId = elem.getAttribute('data-attr')
+            console.log('productId: ', productId);
+        })
+// console.log('addBtn: ', addBtn);
 }
