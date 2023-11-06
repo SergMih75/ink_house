@@ -1,4 +1,6 @@
 .team {
+    width: 1440px;
+    margin: 0 auto;
     padding: 70px 165px;
 
     display: flex;
@@ -11,7 +13,7 @@
 }
 
 .team-text {
-    /* width: 635px; */
+    width: 635px;
     padding-top: 124px;
 }
 
