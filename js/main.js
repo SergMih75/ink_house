@@ -1,5 +1,6 @@
 let collection = document.querySelectorAll('.collection-item')
 let collectionFooter = document.querySelectorAll('.footer-collection')
+let basket = []
 
 collection.forEach(function (elem) {
 	elem.addEventListener('click', activeCollection)
@@ -18,8 +19,8 @@ collectionFooter.forEach(function (elem) {
 				if (collectionAttr == 'fr') {
 					creationCard(fr)
 				}
-				if (collectionAttr == 'ddr') {
-					creationCard(ddr)
+				if (collectionAttr == 'de') {
+					creationCard(de)
 				}
 				if (collectionAttr == 'gb') {
 					creationCard(gb)
@@ -37,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			if (collectionAttrib == 'fr') {
 				creationCard(fr)
 			}
-			if (collectionAttrib == 'ddr') {
-				creationCard(ddr)
+			if (collectionAttrib == 'de') {
+				creationCard(de)
 			}
 			if (collectionAttrib == 'gb') {
 				creationCard(gb)
@@ -57,8 +58,8 @@ function activeCollection() {
 	if (collectionAttrib == 'fr') {
 		creationCard(fr)
 	}
-	if (collectionAttrib == 'ddr') {
-		creationCard(ddr)
+	if (collectionAttrib == 'de') {
+		creationCard(de)
 	}
 	if (collectionAttrib == 'gb') {
 		creationCard(gb)
@@ -86,6 +87,21 @@ function creationCard(data) {
 
 	let addBtn = document.querySelectorAll('.item-add-btn')
 	addBtn.forEach(function (elem) {
-		let productId = elem.getAttribute('data-attr')
+		elem.addEventListener('click', function () {
+			let productId = elem.getAttribute('data-attr')
+			data.forEach(function (el) {
+				if (productId === el[5]) {
+					basket.push(el)
+					document
+						.querySelector('.full-basket')
+						.classList.add('full-basket-add')
+					addBasket(basket)
+				}
+			})
+		})
 	})
+}
+
+function addBasket(basket) {
+	console.log(basket)
 }

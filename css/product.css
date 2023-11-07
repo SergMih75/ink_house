@@ -137,3 +137,11 @@ scale: 1.5;
     text-transform: uppercase;
     box-shadow: -2px 2px 8px #376b44;
 }
+
+.full-basket {
+    opacity: 0;
+}
+
+.full-basket-add {
+    opacity: 1;
+}
