@@ -138,6 +138,19 @@ scale: 1.5;
     box-shadow: -2px 2px 8px #376b44;
 }
 
+.item-add-btn__selected {
+    background-color: #1d3a25;
+    color: #ffff;
+    text-transform: uppercase;
+    box-shadow: -2px 2px 8px #214d5a;
+    border: 1px solid #64500e;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
 .full-basket {
     opacity: 0;
 }

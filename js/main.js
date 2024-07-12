@@ -88,6 +88,8 @@ function creationCard(data) {
 	let addBtn = document.querySelectorAll('.item-add-btn')
 	addBtn.forEach(function (elem) {
 		elem.addEventListener('click', function () {
+			elem.innerHTML = 'Выбрано'
+			elem.classList.add('item-add-btn__selected')
 			let productId = elem.getAttribute('data-attr')
 			data.forEach(function (el) {
 				if (productId === el[5]) {
@@ -95,13 +97,8 @@ function creationCard(data) {
 					document
 						.querySelector('.full-basket')
 						.classList.add('full-basket-add')
-					addBasket(basket)
 				}
 			})
 		})
 	})
-}
-
-function addBasket(basket) {
-	console.log(basket)
 }
