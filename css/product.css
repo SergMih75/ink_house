@@ -83,8 +83,12 @@
     -o-border-radius: 3px;
 }
 
+.item-img-mask {
+    overflow: hidden;
+}
+
 .item-img:hover {
-scale: 1.5;
+scale: 1.2;
 }
 
 .item-author {
@@ -115,6 +119,13 @@ scale: 1.5;
     color: #598D66;
 }
 
+.btn-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
 .item-add-btn {
     width: 310px;
     margin-top: 10px;
@@ -139,6 +150,7 @@ scale: 1.5;
 }
 
 .item-add-btn__selected {
+    width: 50%;
     background-color: #1d3a25;
     color: #ffff;
     text-transform: uppercase;
@@ -149,6 +161,41 @@ scale: 1.5;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    cursor: none;
+}
+
+.item-add-btn__remove {
+    width: 50%;
+    margin-top: 10px;
+    padding: 20px;
+
+    font-size: 20px;
+    cursor: pointer;
+    color: #c82c2c;
+    text-transform: uppercase;
+    box-shadow: -2px 2px 8px #214d5a;
+    border: 1px solid #c82c2c;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.item-add-btn__remove:hover {
+    background-color: #eef141;
+    font-weight: 600;
+    color: #ed2b2b;
+}
+
+.item-add-btn__remove-disable {
+    display: none;
+}
+
+.item-add-btn__remove-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .full-basket {
