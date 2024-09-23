@@ -21,7 +21,24 @@ body {
 
 .main {
 	max-width: 1440px;
+    width: calc(100vw-8px);
 	margin: 0 auto;
 
     position: relative;
+}
+
+body::-webkit-scrollbar,
+.basketpopup-mask::-webkit-scrollbar {
+    width: 8px; /* Ширина всего элемента навигации */
+    background-color: #e1ede6;
+}
+
+body::-webkit-scrollbar-thumb,
+.basketpopup-mask::-webkit-scrollbar-thumb {
+    background-color: #223c50;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }

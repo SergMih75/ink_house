@@ -1,19 +1,19 @@
 .team {
-    width: 1440px;
+    /* width: 1440px; */
     margin: 0 auto;
-    padding: 70px 165px;
+    padding: 70px 105px;
 
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
 }
 
 .team-img {
-    width: 445px;
+    width: 50%;
 }
 
 .team-text {
-    width: 635px;
+    width: 50%;
     padding-top: 124px;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .members-img:hover {
-    scale: 1.1;
+    scale: 1.25;
 
     box-shadow: -3px 3px 7px #2C2D35;
 }

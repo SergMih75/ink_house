@@ -74,7 +74,7 @@ function activeCollection() {
 }
 
 function creationCard(data) {
-	console.log(data);
+
 	document.querySelector('.reproduction-collection').innerHTML = ''
 
 	data.forEach(function (item) {
@@ -141,6 +141,17 @@ function creationCard(data) {
 			removeBtn.previousElementSibling.textContent = 'Добавить'
 			localStorage.removeItem('product_'+removeBtn.getAttribute('data-attr'))
 			localStorage.removeItem('productQuantity_'+removeBtn.getAttribute('data-attr'))
+
+			let orderRest = 0
+			// Убираем значок полной корзины при удалении всех выбранных товаров, нажатием на кнопу "Удалить"
+			Object.keys(localStorage).forEach(key => {
+				if (`${key.slice(0,7)}` === 'product'){
+					orderRest  = orderRest + 1
+				} 
+			});
+			if (orderRest === 0) {
+				document.querySelector('.full-basket').classList.remove('full-basket-add')
+			}
 
 			if (!removeBtn.classList.contains('item-add-btn__remove-disable')) {
 				removeBtn.classList.add('item-add-btn__remove-disable')

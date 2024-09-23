@@ -20,8 +20,8 @@
 .basketpopup-active {display: flex;}
 
 .basketpopup-field {
-    width: 75%;
-    height: 90%;
+    width: 80%;
+    height: 100%;
     padding: 25px 10px;
 
     position: relative;
@@ -65,9 +65,10 @@
 
 .basketpopup-mask {
     width: 95%;
-    height: 95%;
+    height: 85%;
     margin: 0 auto;
     margin-top: 25px;
+    margin-bottom: 15px;
     overflow-y: auto;
 }
 
@@ -90,7 +91,7 @@
     color: rgba(29, 12, 214, 0.616);
 
     text-transform: uppercase;
-    text-shadow: -2px 1px 6px #7c7070f3;
+    /* text-shadow: -2px 1px 6px #7c7070f3; */
 }
 
 .basketpopup-table td {
@@ -119,4 +120,22 @@
 
 .quantity-btn:hover {
     color: #13d540f3;
+}
+
+.basketpopup-order-btn {
+    margin-left: 30px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(29, 12, 214, 0.616);
+    text-transform: uppercase;
+
+    cursor: pointer;
+    background-color: #E1EDE6;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
