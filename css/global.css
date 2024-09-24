@@ -1,14 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    transition: all 200ms ease;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	transition: all 200ms ease;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
 }
 
 body {
@@ -16,29 +16,56 @@ body {
 	font-weight: 500;
 	font-style: normal;
 
-    position: relative;
+	position: relative;
 }
 
 .main {
 	max-width: 1440px;
-    width: calc(100vw-8px);
+	width: calc(100vw-8px);
 	margin: 0 auto;
 
-    position: relative;
+	position: relative;
 }
 
 body::-webkit-scrollbar,
 .basketpopup-mask::-webkit-scrollbar {
-    width: 8px; /* Ширина всего элемента навигации */
-    background-color: #e1ede6;
+	width: 8px; /* Ширина всего элемента навигации */
+	background-color: #e1ede6;
 }
 
 body::-webkit-scrollbar-thumb,
 .basketpopup-mask::-webkit-scrollbar-thumb {
-    background-color: #223c50;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+	background-color: #223c50;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+/* Тема для всплывающей подсказки для библиотеки Tippy.js */
+.tippy-tooltip.ink-theme {
+	padding: 5px;
+	background-color: #e1ede6ec;
+	color: rgb(74, 79, 164);
+	font-size: 18px;
+	font-weight: 800;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+
+.tippy-tooltip.ink-theme[data-placement^='top'] .tippy-arrow {
+	border-top-color: #e1ede6ec;
+}
+.tippy-tooltip.ink-theme[data-placement^='bottom'] .tippy-arrow {
+	border-bottom-color: #e1ede6ec;
+}
+.tippy-tooltip.ink-theme[data-placement^='left'] .tippy-arrow {
+	border-left-color: #e1ede6ec;
+}
+.tippy-tooltip.ink-theme[data-placement^='right'] .tippy-arrow {
+	border-right-color: #e1ede6ec;
 }

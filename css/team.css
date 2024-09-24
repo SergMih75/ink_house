@@ -51,7 +51,19 @@
 }
 
 .members-img:hover {
-    scale: 1.25;
+    scale: 1.15;
+}
 
+.members-mask {
+    overflow: hidden;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.members-mask:hover {
     box-shadow: -3px 3px 7px #2C2D35;
 }
